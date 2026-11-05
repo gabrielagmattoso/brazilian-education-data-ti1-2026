@@ -110,10 +110,10 @@ As dependências e versões utilizadas ainda precisam ser documentadas. Por isso
 - Gabriel Barbosa da Fonseca
 - Marco Paulo Soares Gomes
 
-## Histórico de versões
+## Trajetória do projeto
 
-| Versão | Registro |
-|---|---|
-| 0.1.1 | Atualização da documentação; código permaneceu inalterado. |
-| 0.1.0 | Indução do primeiro modelo do agente inteligente. |
-| 0.0.1 | Preparação dos dados. |
+Checklist em ordem cronológica, conforme o histórico de versões registrado no repositório:
+
+- [x] **0.0.1 — Preparação dos dados.**
+- [x] **0.1.0 — Indução do primeiro modelo do agente inteligente.**
+- [x] **0.1.1 — Atualização da documentação; o código permaneceu inalterado.**
