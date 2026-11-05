@@ -112,8 +112,24 @@ As dependências e versões utilizadas ainda precisam ser documentadas. Por isso
 
 ## Trajetória do projeto
 
-Checklist em ordem cronológica, conforme o histórico de versões registrado no repositório:
+O checklist abaixo acompanha o percurso que aparece nos notebooks: da organização dos dados até a análise dos modelos e o registro dos resultados. A ordem representa as etapas do trabalho documentadas no código, não datas específicas.
 
-- [x] **0.0.1 — Preparação dos dados.**
-- [x] **0.1.0 — Indução do primeiro modelo do agente inteligente.**
-- [x] **0.1.1 — Atualização da documentação; o código permaneceu inalterado.**
+- [x] **Preparação dos dados:** definição das bases utilizadas e leitura dos arquivos do Censo Escolar 2025 e das Taxas de Rendimento Escolar 2024.
+- [x] **Recorte das escolas:** seleção das instituições que ofertam Ensino Médio regular e possuem matrículas nesse nível de ensino.
+- [x] **Integração das bases:** combinação das informações pela chave `CO_ENTIDADE`.
+- [x] **Análise exploratória:** observação da distribuição das taxas de abandono e das características institucionais das escolas.
+- [x] **Preparação das variáveis:** seleção, limpeza e criação de variáveis derivadas para representar aspectos institucionais.
+- [x] **Pré-processamento:** organização das variáveis para utilização nos modelos.
+- [x] **Árvore de Decisão:** aplicação do modelo para explorar regras interpretáveis e fatores associados ao abandono.
+- [x] **Random Forest:** aplicação do modelo na etapa preditiva.
+- [x] **Sistema de alerta:** organização da classificação em três níveis de risco, por meio de etapas em cascata.
+- [x] **Comparação e conclusões:** análise dos resultados dos modelos, dos fatores destacados e das limitações do estudo.
+- [x] **Documentação:** registro do projeto, da metodologia e dos resultados no repositório.
+
+O histórico de versões também registra estes marcos:
+
+| Versão | Registro |
+|---|---|
+| 0.0.1 | Preparação dos dados. |
+| 0.1.0 | Indução do primeiro modelo do agente inteligente. |
+| 0.1.1 | Atualização da documentação; código permaneceu inalterado. |
