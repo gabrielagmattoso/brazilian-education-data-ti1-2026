@@ -112,23 +112,25 @@ As dependências e versões utilizadas ainda precisam ser documentadas. Por isso
 
 ## Trajetória do projeto
 
-Este checklist reconstrói o percurso a partir dos materiais disponíveis: os notebooks iniciais de exploração, as versões anteriores de análise/modelagem, o notebook exploratório atual e o relatório do grupo. A sequência abaixo registra a evolução identificável nos arquivos; eles não informam datas suficientes para atribuir cada etapa a semanas ou meses específicos do primeiro período.
+Este checklist registra o caminho que aparece nos notebooks e no relatório do grupo. Ele não tenta fazer o projeto parecer linear ou perfeito: houve exploração, teste de abordagens e revisão metodológica. Como os materiais não datam cada atividade, a ordem abaixo representa a evolução identificável entre as versões, e não um calendário exato do primeiro período.
 
-- [x] **Primeiros levantamentos de dados:** exploração das bases de matrículas e de informações sobre docentes, registrada nos notebooks `tabela_matricula_docente.ipynb` e em sua segunda versão.
-- [x] **Ampliação da análise institucional:** exploração de atributos das escolas do Censo Escolar 2025, incluindo matrículas, infraestrutura, recursos humanos e características institucionais.
-- [x] **Primeira abordagem de vulnerabilidade:** desenvolvimento de uma versão que construía um índice de vulnerabilidade institucional e testava modelos de classificação, incluindo Random Forest, Gradient Boosting e KNN. Essa etapa está preservada no arquivo `analise_vulnerabilidade_educacional.ipynb`, incluído no material de versões anteriores.
-- [x] **Revisão da abordagem metodológica:** os materiais posteriores registram a opção por não utilizar um índice próprio como variável-alvo e passar a utilizar a taxa oficial de abandono do Ensino Médio de 2024.
-- [x] **Integração das bases:** combinação dos dados do Censo Escolar 2025 e das Taxas de Rendimento Escolar 2024 pela chave `CO_ENTIDADE`, com recorte de escolas que ofertam Ensino Médio regular e possuem matrículas nesse nível.
-- [x] **Análise exploratória:** investigação da distribuição do abandono e das características institucionais, incluindo infraestrutura, acessibilidade, localização, recursos humanos e participação institucional.
-- [x] **Preparação das variáveis:** limpeza, seleção e criação de variáveis derivadas para representar dimensões institucionais utilizadas na análise.
-- [x] **Pré-processamento e divisão dos dados:** preparação dos atributos para os modelos e organização dos conjuntos de treino e teste, conforme descrito no relatório e no notebook de modelagem.
-- [x] **Árvore de Decisão:** utilização de um modelo interpretável para examinar regras associadas aos níveis de abandono.
-- [x] **Random Forest:** utilização de um modelo preditivo como parte do sistema de alerta.
-- [x] **Sistema de alerta em cascata:** organização da classificação em três níveis — Sem abandono, Risco moderado e Alto risco — por meio de duas etapas.
-- [x] **Comparação dos modelos e interpretação dos resultados:** análise do desempenho, das variáveis destacadas e da convergência entre os modelos.
-- [x] **Consolidação e documentação:** organização da metodologia, dos resultados e das limitações no relatório do grupo e nos notebooks disponibilizados no repositório.
+- [x] **Levantamentos iniciais:** exploração de dados de matrículas e de características das escolas, registrada nos notebooks iniciais de análise de matrículas e dados escolares.
+- [x] **Exploração mais ampla do Censo Escolar:** análise de atributos institucionais de 2025, incluindo matrículas, infraestrutura, recursos humanos e características das escolas.
+- [x] **Teste de uma abordagem por índice de vulnerabilidade:** uma versão anterior do notebook `analise_vulnerabilidade_educacional.ipynb`, recebida entre os materiais complementares, constrói um índice institucional e experimenta classificadores como Random Forest, Gradient Boosting e KNN. Esse registro mostra uma das abordagens exploradas durante o desenvolvimento; não é a metodologia final apresentada no relatório.
+- [x] **Revisão da variável-alvo:** nos materiais posteriores, a análise passa a utilizar a taxa oficial de abandono do Ensino Médio de 2024 como variável-alvo, em vez de classificar as escolas pelo índice próprio de vulnerabilidade.
+- [x] **Integração e delimitação da base:** combinação do Censo Escolar 2025 com as Taxas de Rendimento Escolar 2024 pela chave `CO_ENTIDADE`, considerando escolas com Ensino Médio regular e matrículas nesse nível.
+- [x] **Análise exploratória:** investigação da distribuição do abandono e de características institucionais, como infraestrutura, acessibilidade, localização, recursos humanos e participação institucional.
+- [x] **Preparação das variáveis:** limpeza, seleção e criação de variáveis derivadas para representar dimensões institucionais utilizadas no estudo.
+- [x] **Pré-processamento e divisão dos dados:** preparação dos atributos e organização dos conjuntos de treino e teste, conforme descrito no relatório e no notebook de modelagem.
+- [x] **Árvore de Decisão:** aplicação de um modelo interpretável para examinar regras associadas aos níveis de abandono.
+- [x] **Random Forest:** aplicação de um modelo preditivo como parte do sistema de alerta.
+- [x] **Sistema de alerta em cascata:** classificação em três níveis — Sem abandono, Risco moderado e Alto risco — organizada em duas etapas.
+- [x] **Comparação e interpretação:** análise do desempenho dos modelos, das variáveis destacadas e das limitações do estudo.
+- [x] **Consolidação do trabalho:** registro da metodologia, dos resultados e das limitações no relatório do grupo e nos notebooks.
 
-**Nota sobre a cronologia:** os arquivos comprovam essas linhas de trabalho e permitem reconstruir a evolução metodológica, mas não comprovam datas exatas nem a ordem de cada atividade dentro do calendário acadêmico. Por isso, o checklist apresenta a sequência entre versões e etapas documentadas, sem inventar datas. Os notebooks e arquivos de versões anteriores são registros do processo, não etapas que devam ser apagadas por não corresponderem à versão final.
+**O que o histórico do Git comprova:** os principais arquivos do projeto foram registrados no repositório em 26/08/2026, em commits de criação e envio de arquivos. Isso confirma quando o material foi colocado no GitHub, mas não permite concluir em que dia cada análise foi feita pelo grupo nem estabelecer a ordem exata de todas as atividades acadêmicas.
+
+**O que não foi inventado:** não foram atribuídas datas individuais às etapas, nem afirmado que a sequência acima corresponde a semanas específicas. O notebook de vulnerabilidade é citado como uma abordagem anterior encontrada nos materiais complementares, não como parte da versão final do método.
 
 O histórico de versões também registra estes marcos:
 
