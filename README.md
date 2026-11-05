@@ -112,19 +112,23 @@ As dependências e versões utilizadas ainda precisam ser documentadas. Por isso
 
 ## Trajetória do projeto
 
-O checklist abaixo acompanha o percurso que aparece nos notebooks: da organização dos dados até a análise dos modelos e o registro dos resultados. A ordem representa as etapas do trabalho documentadas no código, não datas específicas.
+Este checklist reconstrói o percurso a partir dos materiais disponíveis: os notebooks iniciais de exploração, as versões anteriores de análise/modelagem, o notebook exploratório atual e o relatório do grupo. A sequência abaixo registra a evolução identificável nos arquivos; eles não informam datas suficientes para atribuir cada etapa a semanas ou meses específicos do primeiro período.
 
-- [x] **Preparação dos dados:** definição das bases utilizadas e leitura dos arquivos do Censo Escolar 2025 e das Taxas de Rendimento Escolar 2024.
-- [x] **Recorte das escolas:** seleção das instituições que ofertam Ensino Médio regular e possuem matrículas nesse nível de ensino.
-- [x] **Integração das bases:** combinação das informações pela chave `CO_ENTIDADE`.
-- [x] **Análise exploratória:** observação da distribuição das taxas de abandono e das características institucionais das escolas.
-- [x] **Preparação das variáveis:** seleção, limpeza e criação de variáveis derivadas para representar aspectos institucionais.
-- [x] **Pré-processamento:** organização das variáveis para utilização nos modelos.
-- [x] **Árvore de Decisão:** aplicação do modelo para explorar regras interpretáveis e fatores associados ao abandono.
-- [x] **Random Forest:** aplicação do modelo na etapa preditiva.
-- [x] **Sistema de alerta:** organização da classificação em três níveis de risco, por meio de etapas em cascata.
-- [x] **Comparação e conclusões:** análise dos resultados dos modelos, dos fatores destacados e das limitações do estudo.
-- [x] **Documentação:** registro do projeto, da metodologia e dos resultados no repositório.
+- [x] **Primeiros levantamentos de dados:** exploração das bases de matrículas e de informações sobre docentes, registrada nos notebooks `tabela_matricula_docente.ipynb` e em sua segunda versão.
+- [x] **Ampliação da análise institucional:** exploração de atributos das escolas do Censo Escolar 2025, incluindo matrículas, infraestrutura, recursos humanos e características institucionais.
+- [x] **Primeira abordagem de vulnerabilidade:** desenvolvimento de uma versão que construía um índice de vulnerabilidade institucional e testava modelos de classificação, incluindo Random Forest, Gradient Boosting e KNN. Essa etapa está preservada no arquivo `analise_vulnerabilidade_educacional.ipynb`, incluído no material de versões anteriores.
+- [x] **Revisão da abordagem metodológica:** os materiais posteriores registram a opção por não utilizar um índice próprio como variável-alvo e passar a utilizar a taxa oficial de abandono do Ensino Médio de 2024.
+- [x] **Integração das bases:** combinação dos dados do Censo Escolar 2025 e das Taxas de Rendimento Escolar 2024 pela chave `CO_ENTIDADE`, com recorte de escolas que ofertam Ensino Médio regular e possuem matrículas nesse nível.
+- [x] **Análise exploratória:** investigação da distribuição do abandono e das características institucionais, incluindo infraestrutura, acessibilidade, localização, recursos humanos e participação institucional.
+- [x] **Preparação das variáveis:** limpeza, seleção e criação de variáveis derivadas para representar dimensões institucionais utilizadas na análise.
+- [x] **Pré-processamento e divisão dos dados:** preparação dos atributos para os modelos e organização dos conjuntos de treino e teste, conforme descrito no relatório e no notebook de modelagem.
+- [x] **Árvore de Decisão:** utilização de um modelo interpretável para examinar regras associadas aos níveis de abandono.
+- [x] **Random Forest:** utilização de um modelo preditivo como parte do sistema de alerta.
+- [x] **Sistema de alerta em cascata:** organização da classificação em três níveis — Sem abandono, Risco moderado e Alto risco — por meio de duas etapas.
+- [x] **Comparação dos modelos e interpretação dos resultados:** análise do desempenho, das variáveis destacadas e da convergência entre os modelos.
+- [x] **Consolidação e documentação:** organização da metodologia, dos resultados e das limitações no relatório do grupo e nos notebooks disponibilizados no repositório.
+
+**Nota sobre a cronologia:** os arquivos comprovam essas linhas de trabalho e permitem reconstruir a evolução metodológica, mas não comprovam datas exatas nem a ordem de cada atividade dentro do calendário acadêmico. Por isso, o checklist apresenta a sequência entre versões e etapas documentadas, sem inventar datas. Os notebooks e arquivos de versões anteriores são registros do processo, não etapas que devam ser apagadas por não corresponderem à versão final.
 
 O histórico de versões também registra estes marcos:
 
